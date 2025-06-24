@@ -1,0 +1,128 @@
+/* style.css */
+
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- BODY --- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* --- HEADERS --- */
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* --- FORM STYLING --- */
+form {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* --- FORM INPUTS --- */
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* --- BUTTON --- */
+button {
+  padding: 10px;
+  font-size: 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* --- TODO LIST --- */
+ul#todo-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+ul#todo-list li {
+  background: #fff;
+  border-left: 6px solid #2ecc71;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+ul#todo-list li strong {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+ul#todo-list li input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 10px;
+}
+
+ul#todo-list li button {
+  background: #e74c3c;
+  padding: 6px 10px;
+  align-self: flex-end;
+}
+
+ul#todo-list li button:hover {
+  background: #c0392b;
+}
+.user-info {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+}
+.user-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+.user-info p strong {
+  color: #2c3e50;
+}

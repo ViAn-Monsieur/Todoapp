@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="user-info">
+    <span id="username-display"></span>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <h1>To-Do List</h1>
+
+  <form id="todo-form">
+    <input type="text" id="text" placeholder="What to do?" required>
+    <input type="datetime-local" id="deadline">
+    <select id="priority">
+      <option value="0">Low</option>
+      <option value="1">Medium</option>
+      <option value="2">High</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul id="todo-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
